@@ -14,7 +14,7 @@ function Projects() {
       id: 1,
       url:  project1 ,
       title: "MovieAura-Movie Guide Platform",
-      info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia voluptatem quis ad necessitatibus ut nulla eos assumenda. Incidunt amet culpa quidem. Dolor perferendis quos nemo nulla, repellendus accusantium? Excepturi, veniam quo incidunt neque provident molestias.",
+      info: "A dynamic movie guide project built with JavaScript, leveraging the OMDB API to fetch and display movie details such as plot, ratings, cast, and more. The user-friendly interface allows seamless search and exploration of a vast collection of films, enhancing the movie discovery experience.",
       skill: "JavaScript",
     },
 
@@ -22,7 +22,7 @@ function Projects() {
       id: 2,
       url:  project4 ,
       title: "Tic Toe Toe Game",
-      info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia voluptatem quis ad necessitatibus ut nulla eos assumenda. Incidunt amet culpa quidem. Dolor perferendis quos nemo nulla, repellendus accusantium? Excepturi, veniam quo incidunt neque provident molestias.",
+      info: "A classic Tic Tac Toe game for two players, built using JavaScript. Features an interactive interface, real-time gameplay, and logic to detect winners or ties, providing a fun and engaging experience.",
       skill: "JavaScript",
     },
 
@@ -30,14 +30,14 @@ function Projects() {
       id: 3,
       url:  project5 ,
       title: "Weather App",
-      info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia voluptatem quis ad necessitatibus ut nulla eos assumenda. Incidunt amet culpa quidem. Dolor perferendis quos nemo nulla, repellendus accusantium? Excepturi, veniam quo incidunt neque provident molestias.",
+      info: "A responsive weather app built using JavaScript, utilizing a weather API to provide real-time updates on current conditions, forecasts, and temperatures for any location. Simple, fast, and user-friendly.",
       skill: "JavaScript",
     },
     {
       id: 4,
       url:  project6 ,
       title: "To Do List App",
-      info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia voluptatem quis ad necessitatibus ut nulla eos assumenda. Incidunt amet culpa quidem. Dolor perferendis quos nemo nulla, repellendus accusantium? Excepturi, veniam quo incidunt neque provident molestias.",
+      info: "A sleek and interactive to-do list website built with JavaScript, allowing users to easily add and manage tasks. Features include task prioritization, real-time updates, and a clean user interface to boost productivity.",
       skill: "JavaScript",
     },
   ];
@@ -66,7 +66,7 @@ function Projects() {
       </div>
 
       <div className="h-1/2 w-full bg-black pt-20 pb-16 pl-5 pr-5 " >
-        <div className=" flex justify-around flex-wrap " >
+        <div className=" flex justify-around gap-10 flex-wrap " >
           {cardsToDisplay.map((card) => (
             <div key={card.id} data-aos="flip-left">
               <ProjectCard

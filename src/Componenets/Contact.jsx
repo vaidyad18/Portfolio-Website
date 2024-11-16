@@ -48,8 +48,8 @@ function Contact() {
           </p>
         </div>
 
-        <div className="w-full  flex items-center justify-between pt-10" data-aos="zoom-in">
-          <div className="ml-48 mb-5">
+        <div className="w-full md:flex-row flex-col flex items-center justify-around pt-10" data-aos="zoom-in">
+          <div className=" flex  flex-col items-center mb-5">
             <img
               className="w-96"
               src="https://finnovating.com/wp-content/uploads/2021/01/contact-us-03.png"
@@ -60,7 +60,7 @@ function Contact() {
               vaidyadandriyal04@gmail.com
             </p>
           </div>
-          <div className="mt-10 mr-72">
+          <div className="mt-10 flex flex-col items-center">
             <div className="flex">
               <div className="text-4xl text-blue-500 font-micro font-bold mb-5">
                 GET IN TOUCH
@@ -104,7 +104,7 @@ function Contact() {
             </form>
           </div>
         </div>
-        <div className="flex items-center w-full justify-center pb-16 pt-6 h-10 space-x-8" data-aos="fade-up">
+        <div className="flex items-center w-full justify-center pb-16 pt-6 h-10 space-x-8">
           <a
             href="https://www.linkedin.com/in/vaidyadandriyal/"
             className="transition-transform transform hover:scale-125"

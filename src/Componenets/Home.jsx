@@ -15,20 +15,18 @@ function Home() {
 
   useEffect(() => {
     AOS.init({duration:1200})
-  
-    
   })
 
   return (
-    <div id="home" className="bg-black w-full py-20 pt-20 " >
-      <div className="text-white flex-wrap flex items-center justify-between" data-aos="zoom-in">
-        <div className="ml-5 flex flex-col " >
+    <div id="home" className="bg-black w-full py-20 pt-20 lg:mb-0 -mb-20 " >
+      <div className="text-white lg:flex-row flex-col-reverse flex lg:items-center items-start justify-between" data-aos="zoom-in">
+        <div className=" lg:flex-col gap-7 lg:gap-0 xl:mr-0 mr-16 flex lg:mt-0 -mt-4 lg:ml-5 md:ml-20 ml-10 flex-row " >
           <a
             className="mb-8 transition-transform transform hover:scale-125"
             href="https://www.linkedin.com/in/vaidyadandriyal/"
           >
             <img
-              className="box-border w-10 invert"
+              className="box-border sm:w-9 w-8 md:w-10 invert"
               src="https://cdn3.iconfinder.com/data/icons/2018-social-media-black-and-white-logos/1000/2018_social_media_popular_app_logo_linkedin-512.png"
               alt="LinkedIn"
             />
@@ -38,7 +36,7 @@ function Home() {
             href="https://github.com/vaidyad18"
           >
             <img
-              className="w-10 invert"
+              className="sm:w-9 w-8 md:w-10 invert"
               src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
               alt="GitHub"
             />
@@ -48,18 +46,18 @@ function Home() {
             href="https://leetcode.com/u/vaidyad18/"
           >
             <img
-              className="w-9 ml-1 invert"
+              className="sm:w-8 w-7 md:w-9 ml-1 invert"
               src="https://static-00.iconduck.com/assets.00/leetcode-icon-1721x2048-ludgp8qf.png"
               alt="LeetCode"
             />
           </a>
         </div>
 
-        <div className=" w-3/6 py-12">
-          <div className="text-xl border-white border-[1.5px] rounded-lg bg-blue-900 font-semibold w-72 text-center py-1 mb-2 ">
+        <div className=" lg:w-3/6 md:w-full w-[500px] ml-10 md:ml-20 py-12 lg:-ml-5">
+          <div className="text-xl border-white border-[1.5px] rounded-lg bg-blue-900 font-semibold w-72 text-center py-1 mb-2  ">
             Welcome to my Portfolio
           </div>
-          <div className="text-5xl font-bold w-full mt-4 mb-2">
+          <div className="text-5xl   font-bold w-full mt-4 mb-2">
             Hello, I'm Vaidya Dandriyal
           </div>
           <div className="text-5xl font-bold mb-7 text-blue-500">
@@ -79,9 +77,9 @@ function Home() {
           <div className=""></div>
         </div>
 
-        <div className="mr-32">
+        <div className="lg:mr-32 mx-auto lg:mx-0" >
           <img
-            className="w-[25rem] rounded-full  transition-transform transform hover:scale-105"
+            className="lg:w-[25rem] sm:w-[28rem] w-[20rem] rounded-full  transition-transform transform hover:scale-105"
             src={pfp}
             alt=""
           />

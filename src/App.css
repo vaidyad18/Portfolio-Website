@@ -1,0 +1,10 @@
+html {
+    background-color: black;
+    color: white;
+  }
+  
+  /* Light mode styles */
+  html.light-mode {
+    background-color: white;
+    color: black;
+  }
