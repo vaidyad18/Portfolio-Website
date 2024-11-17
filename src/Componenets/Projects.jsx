@@ -65,7 +65,7 @@ function Projects() {
         </p>
       </div>
 
-      <div className="h-1/2 w-full bg-black pt-20 pb-16 pl-5 pr-5 " >
+      <div className="h-1/2 w-full bg-black pt-20 pb-16 pl-5 pr-10 " >
         <div className=" flex justify-around gap-10 flex-wrap " >
           {cardsToDisplay.map((card) => (
             <div key={card.id} data-aos="flip-left">
