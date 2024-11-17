@@ -84,7 +84,7 @@ function Projects() {
           {visibleCount < allCards.length && (
             <button
               onClick={handleLoadMore}
-              className="rounded-lg bg-blue-600 py-2 px-8 text-xl hover:bg-blue-900 duration-300 text-white font-semibold  "
+              className="rounded-lg bg-blue-600 py-2  sm:px-8 px-5 text-md sm:text-lg md:text-xl hover:bg-blue-900 duration-300 text-white font-semibold  "
             >
               View More
             </button>

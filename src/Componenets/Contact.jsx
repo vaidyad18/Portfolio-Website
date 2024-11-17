@@ -48,21 +48,21 @@ function Contact() {
           </p>
         </div>
 
-        <div className="w-full md:flex-row flex-col flex items-center justify-around pt-10" data-aos="zoom-in">
+        <div className="w-full lg:flex-row flex-col flex items-center justify-around pt-10" data-aos="zoom-in">
           <div className=" flex  flex-col items-center mb-5">
             <img
-              className="w-96"
+              className="sm:w-96 w-72"
               src="https://finnovating.com/wp-content/uploads/2021/01/contact-us-03.png"
               alt=""
             />
-            <p className="font-semibold text-center text-xl text-white -mt-5">
+            <p className="font-semibold text-center sm:text-xl text-lg text-white -mt-5">
               <i className="fa-sharp fa-regular fa-envelope"></i> :
               vaidyadandriyal04@gmail.com
             </p>
           </div>
           <div className="mt-10 flex flex-col items-center">
             <div className="flex">
-              <div className="text-4xl text-blue-500 font-micro font-bold mb-5">
+              <div className="sm:text-4xl text-3xl text-blue-500 font-micro font-bold mb-5">
                 GET IN TOUCH
               </div>
               <img
@@ -73,7 +73,7 @@ function Contact() {
             </div>
             <form className="flex flex-col mb-7" onSubmit={onSubmit}>
               <input
-                className="rounded-lg shadow-lg shadow-slate-500 mb-5 w-96 pl-5 py-2 capitalize "
+                className="rounded-lg shadow-lg shadow-slate-500 mb-5 w-60 sm:w-96 pl-5 py-2 capitalize "
                 type="text"
                 placeholder="Name"
                 name="name"
