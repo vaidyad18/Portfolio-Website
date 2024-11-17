@@ -69,7 +69,7 @@ const Skills = () => {
     const endScrollDistance = scrollWidth / 2 - viewportWidth;
 
     gsap.to(scrollContentRef.current, {
-      x: () => `-${scrollWidth - viewportWidth }px`,
+      x: () => `-${scrollWidth - viewportWidth+500 }px`,
       ease: "none",
       duration: 0.5,
       scrollTrigger: {
