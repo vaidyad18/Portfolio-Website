@@ -53,7 +53,7 @@ function Home() {
           </a>
         </div>
 
-        <div className=" lg:w-3/6 md:w-[680px] sm:w-[460px] w-[360px] ml-10 md:ml-20 py-12 lg:-ml-5">
+        <div className=" lg:w-3/6 md:w-[680px] sm:w-[460px] w-[340px] ml-10 md:ml-20 py-12 lg:-ml-5">
           <div className="sm:text-xl text-lg border-white border-[1.5px] rounded-lg bg-blue-900 font-semibold sm:w-72 w-60 text-center py-1 mb-2  ">
             Welcome to my Portfolio
           </div>
