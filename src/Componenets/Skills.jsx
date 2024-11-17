@@ -99,31 +99,31 @@ const Skills = () => {
         </div>
 
         <div className="mr-96 ml-80 text-center pt-32" >
-          <p className="text-[18rem]  text-white font-display">C++</p>
+          <p className="sm:text-[18rem] text-[15rem]  text-white font-display">C++</p>
         </div>
 
         <div className="mr-96 text-center pt-32">
-          <p className="text-[18rem]  text-white font-display">HTML</p>
+          <p className="sm:text-[18rem] text-[15rem]  text-white font-display">HTML</p>
         </div>
 
         <div className="mr-96 text-center pt-32">
-          <p className="text-[18rem]  text-white font-display">CSS</p>
+          <p className="sm:text-[18rem] text-[15rem]  text-white font-display">CSS</p>
         </div>
 
         <div className="mr-96 text-center pt-32">
-          <p className="text-[18rem] text-white font-display">JavaScript</p>
+          <p className="sm:text-[18rem] text-[15rem] text-white font-display">JavaScript</p>
         </div>
 
         <div className="mr-96 text-center pt-32">
-          <p className="text-[18rem] text-white font-display">React</p>
+          <p className="sm:text-[18rem] text-[15rem] text-white font-display">React</p>
         </div>
 
         <div className="mr-96 text-center pt-32">
-          <p className="text-[18rem] text-white font-display">TailwindCSS</p>
+          <p className="sm:text-[18rem] text-[15rem] text-white font-display">TailwindCSS</p>
         </div>
 
         <div className="text-center pt-32">
-          <p className="text-[18rem] mr-40 text-white font-display">SQL</p>
+          <p className="sm:text-[18rem] text-[15rem] mr-40 text-white font-display">SQL</p>
         </div>
 
         <img
