@@ -2,7 +2,7 @@ import React from "react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import pfp from "../assets/pfp.jpg";
 import AOS from "aos";
-import "aos/dist/aos.css"
+import "aos/dist/aos.css";
 import { useEffect } from "react";
 
 function Home() {
@@ -14,15 +14,19 @@ function Home() {
   });
 
   useEffect(() => {
-    AOS.init({duration:1200})
-  })
+    AOS.init({ duration: 1200 });
+  });
 
   return (
-    <div id="home" className="bg-black w-full py-20 pt-20 lg:mb-0 -mb-20 " >
-      <div className="text-white lg:flex-row flex-col-reverse flex lg:items-center items-start justify-between" data-aos="zoom-in">
-        <div className=" lg:flex-col gap-5 lg:gap-0 xl:mr-0 mr-16 flex lg:mt-0 -mt-4 lg:ml-5 md:ml-20 ml-10 flex-row " >
+    <div id="home" className="bg-black w-full py-20 pt-20 lg:mb-0 -mb-20 ">
+      <div
+        className="text-white lg:flex-row flex-col-reverse flex lg:items-center items-start justify-between"
+        data-aos="zoom-in"
+      >
+        <div className=" lg:flex-col gap-5 lg:gap-0 xl:mr-0 mr-16 flex lg:mt-0 -mt-4 lg:ml-5 md:ml-20 ml-10 flex-row ">
           <a
-            className="mb-8 transition-transform transform hover:scale-125" target="_blank"
+            className="mb-8 transition-transform transform hover:scale-125"
+            target="_blank"
             href="https://www.linkedin.com/in/vaidyadandriyal/"
           >
             <img
@@ -32,7 +36,8 @@ function Home() {
             />
           </a>
           <a
-            className="mb-8 transition-transform transform hover:scale-125" target="_blank"
+            className="mb-8 transition-transform transform hover:scale-125"
+            target="_blank"
             href="https://github.com/vaidyad18"
           >
             <img
@@ -42,7 +47,8 @@ function Home() {
             />
           </a>
           <a
-            className="transition-transform transform hover:scale-125" target="_blank"
+            className="transition-transform transform hover:scale-125"
+            target="_blank"
             href="https://leetcode.com/u/vaidyad18/"
           >
             <img
@@ -71,13 +77,17 @@ function Home() {
             and data structures, is passionate about innovative, efficient
             problem-solving in tech.
           </div>
-          <a href="Resume.pdf" download="Vaidya Dandriyal Resume"><button className="bg-blue-800 hover:bg-blue-950 font-semibold duration-300 transition-all font-sans px-6 py-2 sm:text-lg text-sm mt-7 rounded-md">
-            Download Resume <i className="fa-solid fa-download pl-1"></i>
-          </button></a>
-          
+          <a
+            href="/assets/Resume.pdf"
+            download="Vaidya Dandriyal Resume"
+          >
+            <button className="bg-blue-800 hover:bg-blue-950 font-semibold duration-300 transition-all font-sans px-6 py-2 sm:text-lg text-sm mt-7 rounded-md">
+              Download Resume <i className="fa-solid fa-download pl-1"></i>
+            </button>
+          </a>
         </div>
 
-        <div className="lg:mr-32 mx-auto lg:mx-0" >
+        <div className="lg:mr-32 mx-auto lg:mx-0">
           <img
             className="lg:w-[25rem] sm:w-[28rem] w-[16rem] rounded-full  transition-transform transform hover:scale-105"
             src={pfp}
