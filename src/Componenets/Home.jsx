@@ -78,7 +78,7 @@ function Home() {
             problem-solving in tech.
           </div>
           <a
-            href="public/Resume.pdf"
+            href="Portfolio\public\Resume.pdf"
             download="Vaidya Dandriyal Resume"
           >
             <button className="bg-blue-800 hover:bg-blue-950 font-semibold duration-300 transition-all font-sans px-6 py-2 sm:text-lg text-sm mt-7 rounded-md">
