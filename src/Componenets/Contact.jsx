@@ -106,7 +106,7 @@ function Contact() {
         </div>
         <div className="flex items-center w-full justify-center pb-16 pt-6 h-10 space-x-8">
           <a
-            href="https://www.linkedin.com/in/vaidyadandriyal/"
+            href="https://www.linkedin.com/in/vaidyadandriyal/" target="_blank"
             className="transition-transform transform hover:scale-125"
           >
             <img
@@ -116,7 +116,7 @@ function Contact() {
             />
           </a>
           <a
-            href="https://github.com/vaidyad18"
+            href="https://github.com/vaidyad18" target="_blank"
             className="transition-transform transform hover:scale-125"
           >
             <img
@@ -126,7 +126,7 @@ function Contact() {
             />
           </a>
           <a
-            href="https://leetcode.com/u/vaidyad18/"
+            href="https://leetcode.com/u/vaidyad18/" target="_blank"
             className="transition-transform transform hover:scale-125"
           >
             <img

@@ -9,7 +9,7 @@ function ProjectCard(props) {
         
         <p className='text-center text-[0.6rem] sm:text-lg text-gray-400 ml-7 mr-7'>{props.info}</p>
         <p className=' text-xs sm:text-lg bg-blue-900 py-1 px-3 sm:px-4 sm:py-2 rounded-full'>{props.skill}</p>
-        <a href=""><button className='rounded-lg text-xs sm:text-md font-bold px-3 py-1 sm:px-6 sm:py-2 bg-green-700 mb-1 sm:mb-3'>Source Code</button></a>
+        <a target="_blank" href={props.link}><button className='rounded-lg text-xs sm:text-md lg:text-lg font-bold px-3 py-1 sm:px-6 sm:py-2 bg-green-700 mb-1 sm:mb-3'>Source Code</button></a>
       </div>
       
     </div>

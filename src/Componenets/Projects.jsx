@@ -16,6 +16,7 @@ function Projects() {
       title: "MovieAura-Movie Guide Platform",
       info: "A dynamic movie guide project built with JavaScript, leveraging the OMDB API to fetch and display movie details such as plot, ratings, cast, and more. The user-friendly interface allows seamless search and exploration of a vast collection of films, enhancing the movie discovery experience.",
       skill: "JavaScript",
+      link: "https://github.com/vaidyad18/MovieAura-A-Complete-Movie-Guide-Platform"
     },
 
     {
@@ -74,7 +75,7 @@ function Projects() {
                 title={card.title}
                 info={card.info}
                 skill={card.skill}
-                
+                link={card.link}
               />
             </div>
           ))}

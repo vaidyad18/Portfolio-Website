@@ -22,7 +22,7 @@ function Home() {
       <div className="text-white lg:flex-row flex-col-reverse flex lg:items-center items-start justify-between" data-aos="zoom-in">
         <div className=" lg:flex-col gap-5 lg:gap-0 xl:mr-0 mr-16 flex lg:mt-0 -mt-4 lg:ml-5 md:ml-20 ml-10 flex-row " >
           <a
-            className="mb-8 transition-transform transform hover:scale-125"
+            className="mb-8 transition-transform transform hover:scale-125" target="_blank"
             href="https://www.linkedin.com/in/vaidyadandriyal/"
           >
             <img
@@ -32,7 +32,7 @@ function Home() {
             />
           </a>
           <a
-            className="mb-8 transition-transform transform hover:scale-125"
+            className="mb-8 transition-transform transform hover:scale-125" target="_blank"
             href="https://github.com/vaidyad18"
           >
             <img
@@ -42,7 +42,7 @@ function Home() {
             />
           </a>
           <a
-            className="transition-transform transform hover:scale-125"
+            className="transition-transform transform hover:scale-125" target="_blank"
             href="https://leetcode.com/u/vaidyad18/"
           >
             <img
@@ -74,7 +74,7 @@ function Home() {
           <a href="./src/assets/Resume.pdf" download="Vaidya Dandriyal Resume"><button className="bg-blue-800 hover:bg-blue-950 font-semibold duration-300 transition-all font-sans px-6 py-2 sm:text-lg text-sm mt-7 rounded-md">
             Download Resume <i className="fa-solid fa-download pl-1"></i>
           </button></a>
-          <div className=""></div>
+          
         </div>
 
         <div className="lg:mr-32 mx-auto lg:mx-0" >

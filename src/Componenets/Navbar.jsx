@@ -61,7 +61,7 @@ function Navbar() {
   return (
     <>
       <nav className="w-full bg-black text-white h-20 flex items-center justify-between sticky top-0 z-50 ">
-        <div className="text-white w-96 ml-20 hover:text-green-500 transition-all duration-500 text-3xl font-mono">
+        <div className="text-white w-96 ml-1 sm:ml-20 hover:text-green-500 transition-all duration-500 text-3xl font-mono">
           <Link
             spy={true}
             smooth={true}
