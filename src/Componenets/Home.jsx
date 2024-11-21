@@ -86,6 +86,7 @@ function Home() {
             and data structures, is passionate about innovative, efficient
             problem-solving in tech.
           </div>
+          
           <button
             onClick={onClickDownload}
             className="bg-blue-800 hover:bg-blue-950 font-semibold duration-300 transition-all font-sans px-6 py-2 sm:text-lg text-sm mt-7 rounded-md"
