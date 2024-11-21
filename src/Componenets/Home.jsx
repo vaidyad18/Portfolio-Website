@@ -71,7 +71,7 @@ function Home() {
             and data structures, is passionate about innovative, efficient
             problem-solving in tech.
           </div>
-          <a href="./src/assets/Resume.pdf" download="Vaidya Dandriyal Resume"><button className="bg-blue-800 hover:bg-blue-950 font-semibold duration-300 transition-all font-sans px-6 py-2 sm:text-lg text-sm mt-7 rounded-md">
+          <a href="Resume.pdf" download="Vaidya Dandriyal Resume"><button className="bg-blue-800 hover:bg-blue-950 font-semibold duration-300 transition-all font-sans px-6 py-2 sm:text-lg text-sm mt-7 rounded-md">
             Download Resume <i className="fa-solid fa-download pl-1"></i>
           </button></a>
           
