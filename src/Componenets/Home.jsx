@@ -13,17 +13,26 @@ function Home() {
     deleteSpeed: 80,
   });
 
+  const onClickDownload = () => {
+    const link = document.createElement("a");
+    link.href = "/Resume.pdf";
+    link.download = "Vaidya_Dandriyal_Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   useEffect(() => {
     AOS.init({ duration: 1200 });
   });
 
   return (
-    <div id="home" className="bg-black w-full py-20 pt-20 lg:mb-0 -mb-20 ">
+    <div id="home" className="bg-black w-full py-20 pt-20 lg:mb-0 -mb-20">
       <div
         className="text-white lg:flex-row flex-col-reverse flex lg:items-center items-start justify-between"
         data-aos="zoom-in"
       >
-        <div className=" lg:flex-col gap-5 lg:gap-0 xl:mr-0 mr-16 flex lg:mt-0 -mt-4 lg:ml-5 md:ml-20 ml-10 flex-row ">
+        <div className="lg:flex-col gap-5 lg:gap-0 xl:mr-0 mr-16 flex lg:mt-0 -mt-4 lg:ml-5 md:ml-20 ml-10 flex-row">
           <a
             className="mb-8 transition-transform transform hover:scale-125"
             target="_blank"
@@ -59,11 +68,11 @@ function Home() {
           </a>
         </div>
 
-        <div className=" lg:w-3/6 md:w-[680px] sm:w-[460px] w-[32 0px] ml-10 md:ml-20 py-12 lg:-ml-5">
-          <div className="sm:text-xl text-lg border-white border-[1.5px] rounded-lg bg-blue-900 font-semibold sm:w-72 w-60 text-center py-1 mb-2  ">
+        <div className="lg:w-3/6 md:w-[680px] sm:w-[460px] w-[320px] ml-10 md:ml-20 py-12 lg:-ml-5">
+          <div className="sm:text-xl text-lg border-white border-[1.5px] rounded-lg bg-blue-900 font-semibold sm:w-72 w-60 text-center py-1 mb-2">
             Welcome to my Portfolio
           </div>
-          <div className="sm:text-5xl text-3xl  font-bold w-full mt-4 mb-2">
+          <div className="sm:text-5xl text-3xl font-bold w-full mt-4 mb-2">
             Hello, I'm Vaidya Dandriyal
           </div>
           <div className="sm:text-5xl text-3xl font-bold mb-7 text-blue-500">
@@ -77,19 +86,17 @@ function Home() {
             and data structures, is passionate about innovative, efficient
             problem-solving in tech.
           </div>
-          <a
-            href="Portfolio\public\Resume.pdf"
-            download="Vaidya Dandriyal Resume"
+          <button
+            onClick={onClickDownload}
+            className="bg-blue-800 hover:bg-blue-950 font-semibold duration-300 transition-all font-sans px-6 py-2 sm:text-lg text-sm mt-7 rounded-md"
           >
-            <button className="bg-blue-800 hover:bg-blue-950 font-semibold duration-300 transition-all font-sans px-6 py-2 sm:text-lg text-sm mt-7 rounded-md">
-              Download Resume <i className="fa-solid fa-download pl-1"></i>
-            </button>
-          </a>
+            Download Resume <i className="fa-solid fa-download pl-1"></i>
+          </button>
         </div>
 
         <div className="lg:mr-32 mx-auto lg:mx-0">
           <img
-            className="lg:w-[25rem] sm:w-[28rem] w-[16rem] rounded-full  transition-transform transform hover:scale-105"
+            className="lg:w-[25rem] sm:w-[28rem] w-[16rem] rounded-full transition-transform transform hover:scale-105"
             src={pfp}
             alt=""
           />
