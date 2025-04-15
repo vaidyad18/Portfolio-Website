@@ -87,7 +87,7 @@ const Skills = () => {
                     ReactJs
                   </p>
                 </div>
-                <div  className="group flex-col items-center ml-1 relative">
+                <div className="group flex-col items-center ml-1 relative">
                   <img
                     className="lg:w-[75px] w-[60px] hover:animate-float cursor-pointer"
                     src="https://www.shadcn.io/logo.png"
@@ -135,7 +135,7 @@ const Skills = () => {
                     VS Code
                   </p>
                 </div>
-                <div  className="group flex-col  -ml-2 items-center relative lg:ml-1">
+                <div  className="group flex-col xsm:-ml-2 items-center relative lg:ml-1">
                   <img
                     className="lg:w-20 w-[62px] hover:animate-float cursor-pointer"
                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/2048px-Git_icon.svg.png"
@@ -145,7 +145,7 @@ const Skills = () => {
                     Git
                   </p>
                 </div>
-                <div  className="group flex-col lg:ml-0 ml-2 items-center relative ml-1">
+                <div  className="group flex-col lg:ml-0 ml-2 items-center relative ">
                   <img
                     className="lg:w-[75px] w-[55px] hover:animate-float cursor-pointer invert"
                     src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
