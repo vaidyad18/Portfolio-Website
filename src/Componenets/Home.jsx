@@ -3,7 +3,8 @@ import { useTypewriter, Cursor } from "react-simple-typewriter";
 import pfp from "../assets/pfp.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { Moon, Sun } from "lucide-react";
 
 function Home() {
   const [text] = useTypewriter({
@@ -27,7 +28,7 @@ function Home() {
   });
 
   return (
-    <div id="home" className="bg-black w-full py-20 pt-20 lg:mb-0 -mb-20">
+    <div id="home" className="dark:bg-black bg-white w-full py-36 pt-20 lg:mb-0 -mb-20">
       <div
         className="text-white lg:flex-row flex-col-reverse flex lg:items-center items-start justify-between"
         data-aos="zoom-in"
@@ -72,6 +73,8 @@ function Home() {
           <div className="sm:text-xl text-lg border-white border-[1.5px] rounded-lg bg-blue-900 font-semibold sm:w-72 w-60 text-center py-1 mb-2">
             Welcome to my Portfolio
           </div>
+          
+        
           <div className="sm:text-5xl text-3xl font-bold w-full mt-4 mb-2">
             Hello, I'm Vaidya Dandriyal
           </div>
@@ -86,7 +89,7 @@ function Home() {
             and data structures, is passionate about innovative, efficient
             problem-solving in tech.
           </div>
-          
+
           <button
             onClick={onClickDownload}
             className="bg-blue-800 hover:bg-blue-950 font-semibold duration-300 transition-all font-sans px-6 py-2 sm:text-lg text-sm mt-7 rounded-md"

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import { Link } from "react-scroll";
 import { Menu, X } from "lucide-react";
 
@@ -20,7 +20,7 @@ const Nav = () => {
         className="hover:text-blue-500 cursor-pointer transition-all"
         spy={true}
         smooth={true}
-        offset={-10}
+        offset={-90}
         duration={500}
         to="skills"
       >
@@ -58,10 +58,25 @@ function Navbar() {
     setIsOpen(!isOpen);
   };
 
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 10);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <>
-      <nav className="w-full bg-black text-white h-20 flex items-center justify-between sticky top-0 z-50 ">
-        <div className="text-white w-96 ml-1 sm:ml-20 hover:text-green-500 transition-all duration-500 text-3xl font-mono">
+      <nav
+        className={`w-full ${
+          scrolled ? "backdrop-blur-md bg-black/40 " : ""
+        } bg-black text-white h-20 flex items-center justify-between sticky top-0 z-50 `}
+      >
+        <div className="text-white w-96 ml-1 sm:ml-20 hover:text-blue-500 transition-all duration-200 text-3xl font-mono">
           <Link
             spy={true}
             smooth={true}
@@ -84,11 +99,13 @@ function Navbar() {
           </button>
         </div>
       </nav>
-      {isOpen && (
-        <div className="flex basis-full bg-black transition-all text-white h-36 text-lg justify-around flex-col pb-3 pt-1 items-center">
-          <Nav />
-        </div>
-      )}
+      <div
+        className={`fixed top-20 right-0 px-16 xsm:px-20 xs:px-32 h-screen bg-black text-white text-xl gap-6 font-semibold flex flex-col items-center pt-10 transition-transform duration-300 ease-in-out z-40 ${
+          isOpen ? "translate-x-0" : "translate-x-full"
+        }`}
+      >
+        <Nav />
+      </div>
     </>
   );
 }

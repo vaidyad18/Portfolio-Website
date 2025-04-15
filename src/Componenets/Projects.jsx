@@ -1,45 +1,77 @@
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import ProjectCard from "./ProjectCard";
 import project1 from "../assets/project1.jpg";
-import project4 from "../assets/project4.jpg";
-import project5 from "../assets/project5.jpg";
-import project6 from "../assets/project6.jpg"; 
+import nexume from "../assets/nexume.jpg";
+import dailynewz from "../assets/dailynewz.jpg";
+import rbac from "../assets/rbac.jpg";
 import AOS from "aos";
-import "aos/dist/aos.css"
+import "aos/dist/aos.css";
 
 function Projects() {
-
   const allCards = [
     {
       id: 1,
-      url:  project1 ,
-      title: "MovieAura-Movie Guide Platform",
-      info: "A dynamic movie guide project built with JavaScript, leveraging the OMDB API to fetch and display movie details such as plot, ratings, cast, and more. The user-friendly interface allows seamless search and exploration of a vast collection of films, enhancing the movie discovery experience.",
-      skill: "JavaScript",
-      link: "https://github.com/vaidyad18/MovieAura-A-Complete-Movie-Guide-Platform"
+      url: nexume,
+      title: "Nexume - AI Resume Builder",
+      info: "Nexume is an AI-powered resume builder crafted with ReactJS, ShadCN, Clerk, and Strapi for seamless user authentication and content management. It streamlines professional resume creation with intelligent templates and real-time editing.",
+      skill: [
+        {
+          name:"ReactJs"
+        },{
+          name:"ShadCN"
+        },{
+          name:"Clerk"
+        },{
+          name:"Strapi"
+        }
+      ],
+      link: "https://nexume-ai.vercel.app/",
     },
 
     {
       id: 2,
-      url:  project4 ,
-      title: "Tic Toe Toe Game",
-      info: "A classic Tic Tac Toe game for two players, built using JavaScript. Features an interactive interface, real-time gameplay, and logic to detect winners or ties, providing a fun and engaging experience.",
-      skill: "JavaScript",
+      url: dailynewz,
+      title: "Daily Newz",
+      info: "DailyNewz is a modern news web app built with React and Tailwind CSS, leveraging the News API to deliver real-time headlines. It offers a clean, responsive interface for browsing the latest global news across various categories.",
+      skill: [
+        {
+          name:"ReactJs"
+        },{
+          name:"Tailwind CSS"
+        }
+      ],
+      link: "https://github.com/vaidyad18/Daily-Newz"
     },
 
     {
       id: 3,
-      url:  project5 ,
-      title: "Weather App",
-      info: "A responsive weather app built using JavaScript, utilizing a weather API to provide real-time updates on current conditions, forecasts, and temperatures for any location. Simple, fast, and user-friendly.",
-      skill: "JavaScript",
+      url: project1,
+      title: "MovieAura - Movie Guide Platform",
+      info: "MovieAura is a dynamic movie guiding platform built with JavaScript, offering users curated movie details, ratings, and etc. It provides an interactive experience for discovering and exploring films across genres.",
+      skill: [
+        {
+          name:"HTML"
+        },{
+          name:"CSS"
+        },{
+          name:"JavaScript"
+        }
+      ],
+      link: "https://github.com/vaidyad18/MovieAura-A-Complete-Movie-Guide-Platform"
     },
     {
       id: 4,
-      url:  project6 ,
-      title: "To Do List App",
-      info: "A sleek and interactive to-do list website built with JavaScript, allowing users to easily add and manage tasks. Features include task prioritization, real-time updates, and a clean user interface to boost productivity.",
-      skill: "JavaScript",
+      url: rbac,
+      title: "RBAC System",
+      info: "RBAC System is a role-based access control app built with ReactJS, Tailwind CSS, and LocalStorage for persistent state management. It enables efficient user and role management with secure, client-side access control.",
+      skill: [
+        {
+          name:"ReactJs"
+        },{
+          name:"Tailwind CSS"
+        }
+      ],
+      link: "https://rbac-seven-gamma.vercel.app/"
     },
   ];
 
@@ -51,11 +83,8 @@ function Projects() {
   };
 
   useEffect(() => {
-    AOS.init({duration:1200})
-  
-    
-  })
-  
+    AOS.init({ duration: 1200 });
+  });
 
   return (
     <div id="projects">
@@ -66,10 +95,10 @@ function Projects() {
         </p>
       </div>
 
-      <div className="h-1/2 w-full bg-black pt-20 pb-16 pl-5 pr-10 " >
-        <div className=" flex justify-around gap-10 flex-wrap " >
+      <div className="h-1/2 w-full bg-black pt-20 pb-10  ">
+        <div className=" flex justify-center gap-x-32 gap-y-10 flex-wrap ">
           {cardsToDisplay.map((card) => (
-            <div key={card.id} data-aos="flip-left">
+            <div key={card.id} data-aos="fade-up">
               <ProjectCard
                 url={card.url}
                 title={card.title}

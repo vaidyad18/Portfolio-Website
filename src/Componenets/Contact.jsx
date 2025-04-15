@@ -1,7 +1,7 @@
 import React from "react";
 import Swal from "sweetalert2";
 import AOS from "aos";
-import "aos/dist/aos.css"
+import "aos/dist/aos.css";
 import { useEffect } from "react";
 
 function Contact() {
@@ -33,22 +33,22 @@ function Contact() {
   };
 
   useEffect(() => {
-    AOS.init({duration:1200})
-  
-    
-  })
+    AOS.init({ duration: 1200 });
+  });
 
   return (
     <div id="contact">
-      <div className="bg-black" >
+      <div className="bg-black">
         <div className="flex items-center justify-center">
           <div className="bg-gray-500 w-full h-[2px]  text-white "></div>
           <p className="absolute  text-white text-2xl font-bold text-center bg-black px-4 ">
             CONTACT ME
           </p>
         </div>
-
-        <div className="w-full lg:flex-row flex-col flex items-center justify-around pt-10" data-aos="zoom-in">
+        <div
+          className="w-full lg:flex-row flex-col flex items-center justify-around pt-10"
+          data-aos="zoom-in"
+        >
           <div className=" flex  flex-col items-center mb-5">
             <img
               className="sm:w-96 w-72"
@@ -62,18 +62,18 @@ function Contact() {
           </div>
           <div className="mt-10 flex flex-col items-center">
             <div className="flex">
-              <div className="sm:text-4xl text-3xl text-blue-500 font-micro font-bold mb-5">
+              <div className="sm:text-4xl text-3xl text-blue-500 font-poppins font-bold mb-5">
                 GET IN TOUCH
               </div>
               <img
-                className="ml-2 w-10 h-10 "
+                className="ml-4 w-10 h-10 "
                 src="https://cdn3d.iconscout.com/3d/premium/thumb/message-3d-illustration-download-in-png-blend-fbx-gltf-file-formats--messenger-logo-new-get-messages-contact-notice-pack-network-communication-illustrations-4137432.png?f=webp"
                 alt=""
               />
             </div>
             <form className="flex flex-col mb-7" onSubmit={onSubmit}>
               <input
-                className="rounded-lg shadow-lg shadow-slate-500 mb-5 w-60 sm:w-96 pl-5 py-2 capitalize "
+                className="rounded-lg border-b-4 border-blue-500 outline-none mb-4 w-60 sm:w-96 pl-5 py-3 capitalize "
                 type="text"
                 placeholder="Name"
                 name="name"
@@ -81,7 +81,7 @@ function Contact() {
                 required
               />
               <input
-                className="rounded-lg shadow-lg shadow-slate-500 mb-5 pl-5 py-2 "
+                className="rounded-lg border-b-4 border-blue-500 outline-none mb-4 pl-5 py-3 "
                 type="email"
                 placeholder="Email"
                 name="email"
@@ -89,7 +89,7 @@ function Contact() {
                 required
               />
               <textarea
-                className="rounded-lg mb-5 shadow-lg shadow-slate-500 h-28 pl-5 pt-2  "
+                className="rounded-lg mb-5 border-b-4 border-blue-500 outline-none h-28 pl-5 pt-2  "
                 placeholder="Write your message"
                 name="message "
                 id=""
@@ -106,7 +106,8 @@ function Contact() {
         </div>
         <div className="flex items-center w-full justify-center pb-16 pt-6 h-10 space-x-8">
           <a
-            href="https://www.linkedin.com/in/vaidyadandriyal/" target="_blank"
+            href="https://www.linkedin.com/in/vaidyadandriyal/"
+            target="_blank"
             className="transition-transform transform hover:scale-125"
           >
             <img
@@ -116,7 +117,8 @@ function Contact() {
             />
           </a>
           <a
-            href="https://github.com/vaidyad18" target="_blank"
+            href="https://github.com/vaidyad18"
+            target="_blank"
             className="transition-transform transform hover:scale-125"
           >
             <img
@@ -126,7 +128,8 @@ function Contact() {
             />
           </a>
           <a
-            href="https://leetcode.com/u/vaidyad18/" target="_blank"
+            href="https://leetcode.com/u/vaidyad18/"
+            target="_blank"
             className="transition-transform transform hover:scale-125"
           >
             <img
