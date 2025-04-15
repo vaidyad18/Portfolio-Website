@@ -57,7 +57,7 @@ function Projects() {
           name:"JavaScript"
         }
       ],
-      link: "https://github.com/vaidyad18/MovieAura-A-Complete-Movie-Guide-Platform"
+      link: "https://movie-aura.vercel.app/"
     },
     {
       id: 4,
