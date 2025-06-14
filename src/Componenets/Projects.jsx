@@ -6,6 +6,7 @@ import dailynewz from "../assets/dailynewz.jpg";
 import rbac from "../assets/rbac.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import sortify from "../assets/sortify.jpg"
 
 function Projects() {
   const allCards = [
@@ -27,9 +28,22 @@ function Projects() {
       ],
       link: "https://nexume-ai.vercel.app/",
     },
-
     {
       id: 2,
+      url: sortify,
+      title: "Sortify - A Sorting Visualizer",
+      info: "Sortify is a React.js-based sorting visualizer that lets users explore algorithms like Bubble, Merge, Quick, Insertion Sort, etc through animated bars. It offers controls to adjust speed, array size, and algorithm selection, while also displaying each algorithm’s time and space complexity for better understanding.",
+      skill: [
+        {
+          name:"ReactJs"
+        },{
+          name:"Tailwind CSS"
+        }
+      ],
+      link: "https://sortify-rouge.vercel.app/"
+    },
+    {
+      id: 3,
       url: dailynewz,
       title: "Daily Newz",
       info: "DailyNewz is a modern news web app built with React and Tailwind CSS, leveraging the News API to deliver real-time headlines. It offers a clean, responsive interface for browsing the latest global news across various categories.",
@@ -43,22 +57,7 @@ function Projects() {
       link: "https://github.com/vaidyad18/Daily-Newz"
     },
 
-    {
-      id: 3,
-      url: project1,
-      title: "MovieAura - Movie Guide Platform",
-      info: "MovieAura is a dynamic movie guiding platform built with JavaScript, offering users curated movie details, ratings, and etc. It provides an interactive experience for discovering and exploring films across genres.",
-      skill: [
-        {
-          name:"HTML"
-        },{
-          name:"CSS"
-        },{
-          name:"JavaScript"
-        }
-      ],
-      link: "https://movie-aura.vercel.app/"
-    },
+    
     {
       id: 4,
       url: rbac,
@@ -72,6 +71,22 @@ function Projects() {
         }
       ],
       link: "https://rbac-seven-gamma.vercel.app/"
+    },
+    {
+      id: 5,
+      url: project1,
+      title: "MovieAura - Movie Guide Platform",
+      info: "MovieAura is a dynamic movie guiding platform built with JavaScript, offering users curated movie details, ratings, and etc. It provides an interactive experience for discovering and exploring films across genres.",
+      skill: [
+        {
+          name:"HTML"
+        },{
+          name:"CSS"
+        },{
+          name:"JavaScript"
+        }
+      ],
+      link: "https://movie-aura.vercel.app/"
     },
   ];
 

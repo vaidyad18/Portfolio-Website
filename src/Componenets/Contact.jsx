@@ -47,7 +47,7 @@ function Contact() {
         </div>
         <div
           className="w-full lg:flex-row flex-col flex items-center justify-around pt-10"
-          data-aos="zoom-in"
+          data-aos="fade-up"
         >
           <div className=" flex  flex-col items-center mb-5">
             <img

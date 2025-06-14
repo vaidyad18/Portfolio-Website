@@ -20,9 +20,9 @@ const Skills = () => {
             SKILLS
           </p>
         </div>
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center" >
           <div className="flex-col text-center items-center py-20 justify-center">
-          <div className="flex md:flex-row flex-col mb-16 items-center">
+          <div data-aos="fade-up" className="flex md:flex-row flex-col mb-16 items-center">
               <div className="font-bold flex flex-col xsm:flex-row md:flex-col md:gap-0 xsm:gap-3 text-center md:text-start font-poppins text-3xl xs:text-4xl xl:text-5xl">
                 <p>TECHNICAL</p>
                 <p>SKILLS</p>
@@ -71,7 +71,7 @@ const Skills = () => {
                 </div>
               </div>
             </div>
-            <div className="flex md:flex-row flex-col items-center mb-16">
+            <div data-aos="fade-up" className="flex md:flex-row flex-col items-center mb-16">
               <div className="font-bold flex  xsm:flex-row flex-col md:flex-col md:gap-0 xsm:gap-2 text-center md:text-start font-poppins text-3xl xs:text-4xl xl:text-5xl">
                 <p>FRAMEWORKS</p>
                 <p>& LIBRARIES</p>
@@ -119,7 +119,7 @@ const Skills = () => {
                 </div>
               </div>
             </div>
-            <div className="flex md:flex-row flex-col items-center">
+            <div data-aos="fade-up" className="flex md:flex-row flex-col items-center">
               <div className="font-bold flex xsm:flex-row flex-col md:flex-col md:gap-0 xsm:gap-2 text-center md:text-start font-poppins text-3xl xs:text-4xl xl:text-5xl">
                 <p>TOOLS &</p>
                 <p>SOFTWARE</p>

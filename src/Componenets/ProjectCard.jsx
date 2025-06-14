@@ -2,7 +2,7 @@ import React from "react";
 
 function ProjectCard(props) {
   return (
-    <div className="md:h-[270px] h-[190px] w-[320px] sm:h-[280px] sm:w-[500px] md:w-[520px] hover:scale-105 duration-200 rounded-2xl  border-white border-2  overflow-hidden relative group mb-12">
+    <div className="md:h-[270px] h-[190px] w-[320px] sm:h-[280px] sm:w-[500px] md:w-[520px] hover:scale-105 duration-300 rounded-2xl  border-white border-2  overflow-hidden relative group mb-12">
       <a target="_blank" href={props.link}>
         <img className="w-full h-full object-cover  " src={props.url} alt="" />
 
