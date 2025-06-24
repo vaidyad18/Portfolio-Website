@@ -4,6 +4,7 @@ import project1 from "../assets/project1.jpg";
 import nexume from "../assets/nexume.jpg";
 import dailynewz from "../assets/dailynewz.jpg";
 import rbac from "../assets/rbac.jpg";
+import tabulr from "../assets/tabulr.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import sortify from "../assets/sortify.jpg"
@@ -44,6 +45,19 @@ function Projects() {
     },
     {
       id: 3,
+      url: tabulr,
+      title: "Tabulr - Excel-like Grid Component",
+      info: "Tabulr is a React-based Excel-like grid component that brings spreadsheet functionality to the web. It supports resizing rows and columns, adding new ones, editing cells, sorting selected ranges, and keyboard navigation. Designed for smooth interaction and flexibility, it's ideal for data-rich web applications.",
+      skill: [
+        {
+          name:"ReactJs"
+        }
+      ],
+      link: "https://tabulr.vercel.app/"
+    },
+
+    {
+      id: 4,
       url: dailynewz,
       title: "Daily Newz",
       info: "DailyNewz is a modern news web app built with React and Tailwind CSS, leveraging the News API to deliver real-time headlines. It offers a clean, responsive interface for browsing the latest global news across various categories.",
@@ -59,7 +73,7 @@ function Projects() {
 
     
     {
-      id: 4,
+      id: 5,
       url: rbac,
       title: "RBAC System",
       info: "RBAC System is a role-based access control app built with ReactJS, Tailwind CSS, and LocalStorage for persistent state management. It enables efficient user and role management with secure, client-side access control.",
@@ -73,7 +87,7 @@ function Projects() {
       link: "https://rbac-seven-gamma.vercel.app/"
     },
     {
-      id: 5,
+      id: 6,
       url: project1,
       title: "MovieAura - Movie Guide Platform",
       info: "MovieAura is a dynamic movie guiding platform built with JavaScript, offering users curated movie details, ratings, and etc. It provides an interactive experience for discovering and exploring films across genres.",
