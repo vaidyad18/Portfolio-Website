@@ -27,7 +27,7 @@ function Projects() {
           name:"Strapi"
         }
       ],
-      link: "https://nexume-ai.vercel.app/",
+      link: "https://nexume-ai-resume-builder.vercel.app/",
     },
     {
       id: 2,
