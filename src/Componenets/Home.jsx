@@ -1,10 +1,9 @@
-import React from "react";
+
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import pfp from "../assets/pfp.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect, useState } from "react";
-import { Moon, Sun } from "lucide-react";
+import { useEffect } from "react";
 
 function Home() {
   const [text] = useTypewriter({
@@ -63,7 +62,7 @@ function Home() {
           >
             <img
               className="sm:w-8 w-6 md:w-9 ml-1 invert"
-              src="https://static-00.iconduck.com/assets.00/leetcode-icon-1721x2048-ludgp8qf.png"
+              src="https://cdn.iconscout.com/icon/free/png-256/free-leetcode-logo-icon-download-in-svg-png-gif-file-formats--technology-social-media-vol-4-pack-logos-icons-2944960.png?f=webp"
               alt="LeetCode"
             />
           </a>
